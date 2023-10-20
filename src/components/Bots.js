@@ -1,12 +1,13 @@
 import React from "react";
 import Navbar from "./Navbar";
 
-function Market() {
+function Bots() {
   return (
     <>
       <Navbar />
+      <div>Bots</div>
     </>
   );
 }
 
-export default Market;
+export default Bots;
