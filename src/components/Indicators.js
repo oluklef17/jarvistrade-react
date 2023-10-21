@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/style.css";
+import hero from "../images/hero.jpg";
 import Navbar from "./Navbar";
 import indicators from "../collections/indicators";
 import Product from "./Product";
