@@ -8,6 +8,7 @@ body {
   margin: 0px;
   font-family: "Poppins", "cursive";
   min-height: 100vh;
+  text-align: center;
 }
 
 .nav {
@@ -118,7 +119,7 @@ a {
   display: none;
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
@@ -163,7 +164,7 @@ a {
     height: calc(100vh - 50px);
     overflow-y: auto;
   }
-}
+} */
 
 body {
   padding: 0;
@@ -175,6 +176,7 @@ body {
     #277ff2 130%
   );
 }
+
 div {
   box-sizing: border-box;
   display: block;
@@ -225,12 +227,6 @@ div {
   width: 70%;
 }
 
-@media (max-width: 768px) {
-  .hero-content {
-    white-space: normal;
-  }
-}
-
 .hero-content h1 {
   color: #38b5f8;
   font-size: 6rem;
@@ -243,6 +239,45 @@ div {
   font-size: 1.5rem;
   white-space: normal;
   font-family: "Lato";
+}
+
+@media (max-width: 768px) {
+  .nav {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-header img {
+    width: 3em;
+    height: 3em;
+  }
+
+  .nav-links a,
+  .dropdown {
+    font-size: 0.4em;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    position: absolute;
+    display: block;
+    width: auto; /* Set the width to auto or adjust it to your needs */
+    min-width: 100%; /* Set a minimum width to ensure it stretches */
+    right: 0;
+    left: auto;
+    margin-top: 1.2em;
+  }
+
+  .dropdown a:hover {
+    color: #38b5f8;
+  }
+
+  .hero-content h2 {
+    font-size: 0.6em;
+  }
+
+  .hero-content h1 {
+    font-size: 1em;
+  }
 }
 
 /*ABOUT SECTION*/
@@ -642,6 +677,35 @@ button[type="submit"]:hover {
   font-weight: bolder;
 }
 
+@media (max-width: 768px) {
+  .product-item {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 15em;
+    height: 30em;
+  }
+
+  .product-description {
+    font-size: 0.5em;
+    font-weight: bold;
+    width: 100%;
+    margin: 0;
+  }
+
+  .product-price,
+  .product-name,
+  .product-platform {
+    font-size: 0.8em;
+    font-weight: bold;
+    width: 100%;
+  }
+}
+
 .project-container {
   margin: 3em;
 }
@@ -660,6 +724,13 @@ button[type="submit"]:hover {
   /* font-family: "Roboto", "sans-serif"; */
 }
 
+@media (max-width: 768px) {
+  .about-container p {
+    font-size: 1em;
+    /* font-family: "Roboto", "sans-serif"; */
+  }
+}
+
 .sm-icon {
   width: 10em;
   height: 10em;
@@ -669,4 +740,17 @@ button[type="submit"]:hover {
 .sm-header {
   margin-top: 3em;
   font-size: 3em;
+}
+
+@media (max-width: 768px) {
+  .sm-icon {
+    width: 6em;
+    height: 6em;
+    margin-top: 3em;
+  }
+
+  .sm-header {
+    margin-top: 2em;
+    font-size: 2em;
+  }
 }

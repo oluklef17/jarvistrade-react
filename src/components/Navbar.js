@@ -34,7 +34,7 @@ function Navbar() {
           <div class="dropdown-menu market-options">
             <Link to="/market/indicators">Indicators</Link>
             <Link to="/market/bots">Bots</Link>
-            <Link to="/market/scripts">Scripts</Link>
+            {/* <Link to="/market/scripts">Scripts</Link> */}
           </div>
         </div>
         <Link to="/custom">Custom</Link>
