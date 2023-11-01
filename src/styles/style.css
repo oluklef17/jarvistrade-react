@@ -1,10 +1,13 @@
-/* * {
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:ital,wght@0,200;1,200&family=Lato&display=swap");
+
+/*  {
   box-sizing: border-box;
 } */
 
 body {
   margin: 0px;
-  font-family: "Helvetica";
+  font-family: "Poppins", "cursive";
+  min-height: 100vh;
 }
 
 .nav {
@@ -13,7 +16,7 @@ body {
   /* max-height: 100px; */
   width: 100%;
   background-color: #040404;
-  font-family: "Helvetica";
+
   justify-content: space-between;
   align-items: center;
 }
@@ -22,8 +25,10 @@ body {
   display: inline;
 }
 
-.nav a {
+.nav div,
+a {
   text-align: center;
+  font-family: "Oswald", "cursive";
 }
 
 /* Style for the dropdown container */
@@ -574,6 +579,7 @@ button[type="submit"]:hover {
 
 .product-description {
   font-size: 0.75vw;
+  font-weight: bold;
 }
 
 .product-price,
@@ -634,4 +640,33 @@ button[type="submit"]:hover {
   margin-top: 1.5em;
   font-size: large;
   font-weight: bolder;
+}
+
+.project-container {
+  margin: 3em;
+}
+
+.project-container h1 {
+  margin: 1em;
+}
+
+.about-container {
+  margin: 3em;
+  min-height: 100vh;
+}
+
+.about-container p {
+  font-size: 1.5em;
+  /* font-family: "Roboto", "sans-serif"; */
+}
+
+.sm-icon {
+  width: 10em;
+  height: 10em;
+  margin-top: 5em;
+}
+
+.sm-header {
+  margin-top: 3em;
+  font-size: 3em;
 }

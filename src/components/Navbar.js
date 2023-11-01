@@ -30,18 +30,16 @@ function Navbar() {
       <div class="nav-links">
         <Link to="/">Home</Link>
         <div class="dropdown" id="market">
-          <a href="shop.html" class="dropdown-toggle">
-            Market
-          </a>
+          <div class="dropdown-toggle">Market</div>
           <div class="dropdown-menu market-options">
             <Link to="/market/indicators">Indicators</Link>
             <Link to="/market/bots">Bots</Link>
             <Link to="/market/scripts">Scripts</Link>
           </div>
         </div>
-        <a href="custom.html">Custom</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact</a>
+        <Link to="/custom">Custom</Link>
+        <Link to="/about">About Us</Link>
+        <Link to="/contact">Contact</Link>
       </div>
     </div>
   );
